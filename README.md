@@ -1,6 +1,6 @@
 # FreezePlayer
  
-- Allows people with permission to freeze and unfreeze players. Combines knowledge of previously learned projects such as arguments, permissions, and other functions found from the FiveM docs.
+- Allows people with permission to freeze and unfreeze players. Combines knowledge of previously learned projects such as arguments, permissions, and functions found from the FiveM docs.
 
 - This script has one identified bug, that being that if the frozen person spam spawns vehicles it is highly likely that they will crash. This is untested in a multiplayer session (created and tested on my local host), so I am unsure if it crashes nearby people as well.
 
