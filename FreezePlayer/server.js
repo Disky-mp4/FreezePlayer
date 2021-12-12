@@ -26,7 +26,7 @@ onNet('disky:freeze', (targetPlayerId) => {
                 args: ['^7[^1Server^7]', 'That player and/or player\'s vehicle should have frozen!'],
                 color: [255, 0, 0]
             })
-            console.log(`Player: (name: ${GetPlayerName(targetPlayerId)} | id: ${targetPlayerId}) was frozen by: (name: ${GetPlayerName(source)} | id: ${source})`); // sogs to server's console, contains the frozen player's name & ID, as well as the command runner's name & id.
+            console.log(`Player: (name: ${GetPlayerName(targetPlayerId)} | id: ${targetPlayerId}) was frozen by: (name: ${GetPlayerName(source)} | id: ${source})`); // logs to server's console, contains the frozen player's name & ID, as well as the command runner's name & id.
         }else{
             emitNet('chat:addMessage', source, { // state in client's chat the ID they provided was not attached to any player within the server
                 args: ['^7[^1Server^7]', 'No player was found with that ID!'],
@@ -53,7 +53,7 @@ onNet('disky:unfreeze', (targetPlayerId) => {
                 args: ['^7[^1Server^7]', 'That player and/or player\'s vehicle should have unfrozen!'],
                 color: [255, 0, 0]
             })
-            console.log(`Player: (name: ${GetPlayerName(targetPlayerId)} | id: ${targetPlayerId}) was unfrozen by: (name: ${GetPlayerName(source)} | id: ${source})`); // sogs to server's console, contains the frozen player's name & ID, as well as the command runner's name & id.
+            console.log(`Player: (name: ${GetPlayerName(targetPlayerId)} | id: ${targetPlayerId}) was unfrozen by: (name: ${GetPlayerName(source)} | id: ${source})`); // logs to server's console, contains the frozen player's name & ID, as well as the command runner's name & id.
         }else{
             emitNet('chat:addMessage', source, { // state in client's chat the ID they provided was not attached to any player within the server
                 args: ['^7[^1Server^7]', 'No player was found with that ID!'],
